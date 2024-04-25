@@ -9,19 +9,19 @@ describe('Bag class verification', () => {
     bag2 = new Bag(11, 2);
   });
 
-  test('Can create an instance of the Bag class property', () => {
+  test('can create an instance of the Bag class', () => {
     expect(bag1 instanceof Bag).toBe(true);
     expect(bag2 instanceof Bag).toBe(true);
   });
 
-  test('Constructor should properly initialize the weight and id properties', () => {
+  test('constructor should properly initialize the weight and id properties', () => {
     expect(bag1.weight).toBe(10);
     expect(bag2.weight).toBe(11);
     expect(bag1.id).toBe(1);
     expect(bag2.id).toBe(2);
   });
 
-  test('Every bag has an owner initialized to null', () => {
+  test('every bag has an owner initialized to null', () => {
     expect(bag1.owner).toBe(null);
     expect(bag2.owner).toBe(null);
   });
